@@ -1,0 +1,42 @@
+.photo-frame {
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    height: 90px;
+    width: 90px;
+}
+.item-frame {
+    height: 60px;
+    width: 60px;
+}
+.contact-span{
+    padding-left: 10px;
+    position: absolute;
+}
+.delete-item-div{
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 46%;
+    padding-left: 3px;
+    box-shadow: 0px 0px 1px #808080a8;
+}
+.pt-13 {
+    padding-top: 13px;
+}
+.item-row{
+    background-color: white;
+    box-shadow: 1px 1px 1px #80808087;
+    border-radius: 7px;
+    height: 80px;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-top: 15px;
+}
+.map{
+    height: 200px;
+    border: 1px solid #80808082;
+    border-radius: 20px;
+}

@@ -1,0 +1,71 @@
+.transparent-background{
+    --background: transparent;
+}
+ion-avatar {
+    height: 80px;
+    width: 80px;
+    margin: auto;
+}
+.profile-item {
+    position: relative;
+    left: 130px;
+}
+.secondary{
+    background-color: #979ca5;
+    --background: none;
+    border-radius: 50px;
+
+}
+.avatar{
+    padding-left: 15px;
+}
+.photo{
+    width: 30%;
+    background-color: #d6d6d6;
+    border-radius: 50px;
+    border: 5px solid var(--ion-color-primary);
+}
+.photo:hover{
+    box-shadow: 0 4px 30px 0 var(--ion-color-primary);
+  }
+.active{
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: -8%;
+    margin-left: 52%;
+    border: 3px solid #fff;
+}
+.segment-label{
+    margin: 0px !important;
+    padding-top: 20px !important;
+}
+.segment-button-checked{
+    border: 1px solid var(--ion-color-success)!important;
+    color:black !important;
+    border-radius: 50px;
+    .segment-label {
+        padding-top: 0px !important;
+    }
+    .bottom-label {
+        display: inline !important;
+        color: var(--ion-color-success) !important;
+    }
+    .font-size-30 {
+        font-size: 18px !important;
+    }
+  }
+  .bottom-label {
+    display: none;
+}
+  ion-button {
+      color: white !important;
+  }
+  h3{
+    color: white;
+  }
+  .success{
+      color: var(--ion-color-success);
+  }

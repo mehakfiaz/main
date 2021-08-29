@@ -1,0 +1,8 @@
+{
+  "name": "basic-structure-app",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

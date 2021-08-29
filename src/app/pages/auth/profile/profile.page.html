@@ -1,0 +1,32 @@
+<ion-header class="ion-no-border" lines="none" color="primary">
+  <ion-toolbar class="ion-transparent-toolbar" color="primary">
+    <ion-item lines="none" color="primary">
+      <!-- <ion-icon name="arrow-back" (click)="dismiss()" slot="start"></ion-icon> -->
+      <ion-icon name='settings' slot="end"></ion-icon>
+    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-no-padding ion-text-center">
+          <div class='avatar'>
+            <ion-avatar class='photo-frame'>
+              <img src="../../../assets/images/user-images/kaleem.jpg">
+              <div class='photo-active-icon'></div>
+            </ion-avatar>
+          </div>
+          <ion-label>
+            <h3 class="color-white">Afsar Hassen</h3>
+            <p class="color-white">Imshuvo97@gmail.com</p>
+          </ion-label>
+          <ion-button shape="round" class="secondary txt-xsmall">Edit Info</ion-button>
+        </ion-col>
+      </ion-row>     
+    </ion-grid> 
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen='true'>
+  <ion-refresher mode="ios" slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="chevron-down-circle-outline" pullingText="Pull to refresh"
+        refreshingSpinner="circles" refreshingText="Refreshing...">
+    </ion-refresher-content>
+</ion-refresher>
+</ion-content>

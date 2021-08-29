@@ -1,0 +1,236 @@
+
+ <ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar class="ion-no-border">
+    <ion-buttons color="light" slot="start">
+      <ion-menu-button color='primary' id="m1"><ion-icon name="grid"></ion-icon></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <h1 class="txt-align-center"><b> Cart</b></h1>
+  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher mode="ios" slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="chevron-down-circle-outline" pullingText="Pull to refresh"
+        refreshingSpinner="circles" refreshingText="Refreshing...">
+    </ion-refresher-content>
+</ion-refresher>
+    <ion-grid class="p-10">
+      <ion-row class="ion-no-padding">
+        <ion-col size="12" class="ion-no-padding">
+          <ion-searchbar
+          placeholder="Start Search"
+          inputmode="decimal"
+          type="decimal"
+          (ionChange)="onSearchChange($event)"
+          [debounce]="250"
+        ></ion-searchbar>
+        </ion-col>
+      </ion-row>
+      <ion-row class="bb-1">
+        <ion-col size="3">
+          <div class="card-img">
+          </div>
+        </ion-col>
+        <ion-col size="6" class="plp-15">
+          <h4 class="font-weight-600">Bell Pepper Red</h4>
+          <ion-label class="product-price">4cps, Price</ion-label>
+          <ion-buttons>
+            <ion-button shape="round" class="cart-btn" (click)="minus()">
+              <ion-icon class="primary-clr" name="remove"></ion-icon>
+            </ion-button>
+            <p class="count">{{ counter }}</p>
+            <ion-button
+              shape="round"
+              class="cart-btn add-btn"
+              (click)="add()"
+            >
+              <ion-icon class="primary-clr" name="add"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col size="3" class="cart-third-col">
+          <div>
+            <ion-icon src="../../../assets/icon/system-icons/side-menu/close .svg"></ion-icon>
+          </div>
+          <span class="color-black price-span">$199</span>
+        </ion-col>
+      </ion-row>
+      <ion-row class="bb-1">
+        <ion-col size="3">
+          <div class="card-img">
+          </div>
+        </ion-col>
+        <ion-col size="6" class="plp-15">
+          <h4 class="font-weight-600">Bell Pepper Red</h4>
+          <ion-label class="product-price">4cps, Price</ion-label>
+          <ion-buttons>
+            <ion-button shape="round" class="cart-btn" (click)="minus()">
+              <ion-icon class="primary-clr" name="remove"></ion-icon>
+            </ion-button>
+            <p class="count">{{ counter }}</p>
+            <ion-button
+              shape="round"
+              class="cart-btn add-btn"
+              (click)="add()"
+            >
+              <ion-icon class="primary-clr" name="add"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col size="3" class="cart-third-col">
+          <div>
+            <ion-icon src="../../../assets/icon/system-icons/side-menu/close .svg"></ion-icon>
+          </div>
+          <span class="color-black price-span">$199</span>
+        </ion-col>
+      </ion-row>
+      <ion-row class="bb-1">
+        <ion-col size="3">
+          <div class="card-img">
+          </div>
+        </ion-col>
+        <ion-col size="6" class="plp-15">
+          <h4 class="font-weight-600">Bell Pepper Red</h4>
+          <ion-label class="product-price">4cps, Price</ion-label>
+          <ion-buttons>
+            <ion-button shape="round" class="cart-btn" (click)="minus()">
+              <ion-icon class="primary-clr" name="remove"></ion-icon>
+            </ion-button>
+            <p class="count">{{ counter }}</p>
+            <ion-button
+              shape="round"
+              class="cart-btn add-btn"
+              (click)="add()"
+            >
+              <ion-icon class="primary-clr" name="add"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col size="3" class="cart-third-col">
+          <div>
+            <ion-icon src="../../../assets/icon/system-icons/side-menu/close .svg"></ion-icon>
+          </div>
+          <span class="color-black price-span">$199</span>
+        </ion-col>
+      </ion-row>
+      <ion-row class="bb-1">
+        <ion-col size="3">
+          <div class="card-img">
+          </div>
+        </ion-col>
+        <ion-col size="6" class="plp-15">
+          <h4 class="font-weight-600">Bell Pepper Red</h4>
+          <ion-label class="product-price">4cps, Price</ion-label>
+          <ion-buttons>
+            <ion-button shape="round" class="cart-btn" (click)="minus()">
+              <ion-icon class="primary-clr" name="remove"></ion-icon>
+            </ion-button>
+            <p class="count">{{ counter }}</p>
+            <ion-button
+              shape="round"
+              class="cart-btn add-btn"
+              (click)="add()"
+            >
+              <ion-icon class="primary-clr" name="add"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col size="3" class="cart-third-col">
+          <div>
+            <ion-icon src="../../../assets/icon/system-icons/side-menu/close .svg"></ion-icon>
+          </div>
+          <span class="color-black price-span">$199</span>
+        </ion-col>
+      </ion-row>
+      <ion-row class="bb-1">
+        <ion-col size="3">
+          <div class="card-img">
+          </div>
+        </ion-col>
+        <ion-col size="6" class="plp-15">
+          <h4 class="font-weight-600">Bell Pepper Red</h4>
+          <ion-label class="product-price">4cps, Price</ion-label>
+          <ion-buttons>
+            <ion-button shape="round" class="cart-btn" (click)="minus()">
+              <ion-icon class="primary-clr" name="remove"></ion-icon>
+            </ion-button>
+            <p class="count">{{ counter }}</p>
+            <ion-button
+              shape="round"
+              class="cart-btn add-btn"
+              (click)="add()"
+            >
+              <ion-icon class="primary-clr" name="add"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col size="3" class="cart-third-col">
+          <div>
+            <ion-icon src="../../../assets/icon/system-icons/side-menu/close .svg"></ion-icon>
+          </div>
+          <span class="color-black price-span">$199</span>
+        </ion-col>
+      </ion-row>
+      <ion-row class="bb-1">
+        <ion-col size="3">
+          <div class="card-img">
+          </div>
+        </ion-col>
+        <ion-col size="6" class="plp-15">
+          <h4 class="font-weight-600">Bell Pepper Red</h4>
+          <ion-label class="product-price">4cps, Price</ion-label>
+          <ion-buttons>
+            <ion-button shape="round" class="cart-btn" (click)="minus()">
+              <ion-icon class="primary-clr" name="remove"></ion-icon>
+            </ion-button>
+            <p class="count">{{ counter }}</p>
+            <ion-button
+              shape="round"
+              class="cart-btn add-btn"
+              (click)="add()"
+            >
+              <ion-icon class="primary-clr" name="add"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col size="3" class="cart-third-col">
+          <div>
+            <ion-icon src="../../../assets/icon/system-icons/side-menu/close .svg"></ion-icon>
+          </div>
+          <span class="color-black price-span">$199</span>
+        </ion-col>
+      </ion-row>
+      <ion-row class="bb-1">
+        <ion-col size="3">
+          <div class="card-img">
+          </div>
+        </ion-col>
+        <ion-col size="6" class="plp-15">
+          <h4 class="font-weight-600">Bell Pepper Red</h4>
+          <ion-label class="product-price">4cps, Price</ion-label>
+          <ion-buttons>
+            <ion-button shape="round" class="cart-btn" (click)="minus()">
+              <ion-icon class="primary-clr" name="remove"></ion-icon>
+            </ion-button>
+            <p class="count">{{ counter }}</p>
+            <ion-button
+              shape="round"
+              class="cart-btn add-btn"
+              (click)="add()"
+            >
+              <ion-icon class="primary-clr" name="add"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col size="3" class="cart-third-col">
+          <div>
+            <ion-icon src="../../../assets/icon/system-icons/side-menu/close .svg"></ion-icon>
+          </div>
+          <span class="color-black price-span">$199</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>       
+</ion-content>
+        

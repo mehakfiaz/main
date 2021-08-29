@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-input maxlength="30"
+     [(ngModel)]="searchAddress"
+      id="serach1" type="search" autocomplete="street-address" autocorrect="on">
+    </ion-input>
+    <ion-buttons slot="end">
+      <ion-button (click)="searchLocation()">
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+      <ion-button (click)="getCurrentPosition()">
+        <ion-icon name="locate"></ion-icon>
+      </ion-button>
+      <ion-button (click)="addAddress()">
+        set Address
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="map" #map></div>
+</ion-content> 
+
+<!-- <ion-footer>
+  <ion-button expand="block" (click)="selectMap()">Select This</ion-button>
+</ion-footer> -->
