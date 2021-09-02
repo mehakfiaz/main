@@ -15,6 +15,10 @@ const routes: Routes = [
     loadChildren: () => import('../app/pages/auth/login/login.module').then( m => m.LoginPageModule)
   },
   {
+    path: 'starter',
+    loadChildren: () => import('../app/pages/auth/starter/starter.module').then( m => m.StarterPageModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
