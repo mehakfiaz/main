@@ -119,6 +119,12 @@ ion-select {
   ion-label {
     color: #9e9e9e !important;
   }
+  .text-color-danger {
+    color: var(--ion-color-danger) !important;
+  }
+  .text-decoration-underline {
+    text-decoration: underline;
+  }
 /****
  Label in ion-item Css Start Section From Here.
 *****/ 

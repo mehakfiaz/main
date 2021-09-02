@@ -20,33 +20,10 @@ const routes: Routes = [
         path: 'profile',
         loadChildren: () => import('../auth/profile/profile.module').then( m => m.ProfilePageModule)
       },
-      {
-        path: 'order-info',
-        loadChildren: () => import('../../pages/orders/order/order.module').then( m => m.OrderPageModule)
-      },
-      {
-        path: 'order',
-        loadChildren: () => import('../../pages/orders/order/order.module').then( m => m.OrderPageModule)
-      },
-      {
-        path: 'explore',
-        loadChildren: () => import('../../pages/explore/explore.module').then( m => m.ExplorePageModule)
-      },
-      {
-        path: 'cart',
-        loadChildren: () => import('../../pages/cart/cart.module').then( m => m.CartPageModule)
-      },
-      {
-        path: 'favourite',
-        loadChildren: () => import('../../pages/favourite/favourite.module').then( m => m.FavouritePageModule)
-      },
+      
       {
         path: 'profile',
         loadChildren: () => import('../../pages/auth/profile/profile.module').then( m => m.ProfilePageModule)
-      },
-      {
-        path: 'addresses',
-        loadChildren: () => import('../../pages/addresses/addresses.module').then( m => m.AddressesPageModule)
       },
       {
         path: 'help',
