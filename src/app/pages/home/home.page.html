@@ -1,79 +1,136 @@
- <ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar class="ion-no-border">
-    <ion-buttons color="light" slot="start">
-      <ion-menu-button color='primary' id="m1"><ion-icon name="grid"></ion-icon></ion-menu-button>
+<ion-header class="ion-no-border myHeader gradientBg" lines="none">
+  <ion-toolbar translucent lines="none">
+    <ion-buttons size="small" slot="start">
+        <ion-menu-button size="small" id="m1">
+            <img src="../../../../assets/menu_bar.svg" />
+        </ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      <h1 class="txt-align-center"><b> Find Product</b></h1>
-  </ion-title>
+    <ion-title class='ion-text-center' color="light">
+      <h2 class='margin-none ion-text-center'>Home</h2>
+    </ion-title>
+    <ion-buttons size="small" slot="end">
+      <ion-button>
+          <ion-icon name="none"></ion-icon>
+      </ion-button>
+  </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-  <ion-refresher mode="ios" slot="fixed" (ionRefresh)="doRefresh($event)">
-    <ion-refresher-content pullingIcon="chevron-down-circle-outline" pullingText="Pull to refresh"
-        refreshingSpinner="circles" refreshingText="Refreshing...">
-    </ion-refresher-content>
-</ion-refresher>
-    <ion-grid class="p-10">
-      <ion-row class="ion-no-padding">
-        <ion-col size="12" class="ion-no-padding">
-          <ion-searchbar
-          placeholder="Start Search"
-          inputmode="decimal"
-          type="decimal"
-          (ionChange)="onSearchChange($event)"
-          [debounce]="250"
-        ></ion-searchbar>
+<ion-content [fullscreen]="true">
+  <div class="top-div">
+    <ion-card class="first-card-global">
+      <ion-row lines="none" class="ion-no-border">
+        <ion-col size="4" class="global-img-col">
+          <div class="img-div">
+            <img class="width-75" src="../../../../assets/icon/dashboard/Artboard - 5.svg" />
+          </div>
+        </ion-col>
+        <ion-col size="8" class="ion-text-center">
+          <h4 class="ion-txt-center primary-color mb-5 "><b>Global View</b></h4>
+          <p class="primary-color mt-0 mb-5 font-weight-bold">Appointment: <span>2</span></p>
         </ion-col>
       </ion-row>
-      <ion-row>
-        <ion-col size="6">
-          <ion-card class="image-card-green">
-            <div class="card-img">
-            </div>
-            <h2 class="product-name">Pick up and delivery</h2>
-          </ion-card>
-        </ion-col>
-        <ion-col size="6">
-          <ion-card class="image-card-pink">
-            <div class="card-img2">
-            </div>
-            <h2 class="product-name">Errand runs</h2>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="6">
-          <ion-card class="image-card-pink">
-            <div class="card-img3">
-            </div>
-            <h2 class="product-name">Legal Document</h2>
-          </ion-card>
-        </ion-col>
-        <ion-col size="6">
-          <ion-card class="image-card-green">
-            <div class="card-img">
-            </div>
-            <h2 class="product-name">Online Orders</h2>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="6">
-          <ion-card class="image-card-green">
-            <div class="card-img2">
-            </div>
-            <h2 class="product-name">Food Pick Up</h2>
-          </ion-card>
-        </ion-col>
-        <ion-col size="6">
-          <ion-card class="image-card-pink">
-            <div class="card-img3">
-            </div>
-            <h2 class="product-name">Fruits</h2>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-    </ion-grid>       
+    </ion-card>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card class="box-shadow border-radius width-90 height-90">
+          <ion-row>
+            <ion-col size="5">
+              <div class="ion-txt-center menu-card-div">
+                <img class="width-75" src="../../../../assets/icon/dashboard/Artboard - 7.svg" />
+              </div>
+            </ion-col>
+            <ion-col size="7" class="pt-25">
+              <h4 class="ion-txt-center primary-color mb-5 font-size-15"><b>DASHBOARD</b></h4>
+              <p class="primary-color mt-0 mb-5 txt-small font-weight-bold">To Process: <span>2</span></p>
+
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="box-shadow border-radius width-90 height-90" >
+          <ion-row>
+            <ion-col size="5">
+              <div class="ion-txt-center menu-card-div">
+                <img class="width-75" src="../../../../assets/icon/dashboard/PO.svg" />
+              </div>
+            </ion-col>
+            <ion-col size="7" class="pt-25">
+              <h4 class="ion-txt-center primary-color mb-5 font-size-15"><b>Appointment</b></h4>
+              <p class="primary-color mt-0 mb-5 txt-small font-weight-bold">Open: <span>1</span></p>
+
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card class="box-shadow border-radius width-90 height-90">
+          <ion-row>
+            <ion-col size="5">
+              <div class="ion-txt-center menu-card-div">
+                <img class="width-75" src="../../../../assets/icon/dashboard/Artboard - 6.svg" />
+              </div>
+            </ion-col>
+            <ion-col size="7" class="pt-25">
+              <h4 class="ion-txt-center primary-color mb-5 font-size-15"><b>Schedule</b></h4>
+              <p class="primary-color mt-0 mb-5 txt-small font-weight-bold">UnPaid: <span>1</span></p>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="box-shadow border-radius width-90 height-90">
+          <ion-row>
+            <ion-col size="5">
+              <div class="ion-txt-center menu-card-div">
+                <img class="width-75" src="../../../../assets/icon/dashboard/Artboard - 6.svg" />
+              </div>
+            </ion-col>
+            <ion-col size="7" class="pt-25">
+              <h4 class="ion-txt-center primary-color mb-5 font-size-15"><b>Blog</b></h4>
+              <p class="primary-color mt-0 mb-5 txt-small font-weight-bold">UnPaid: <span>1</span></p>
+
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card class="box-shadow border-radius width-90 height-90">
+          <ion-row>
+            <ion-col size="5">
+              <div class="ion-txt-center menu-card-div">
+                <img class="width-75" src="../../../../assets/icon/dashboard/promotion.svg" />
+              </div>
+            </ion-col>
+            <ion-col size="7" class="pt-25">
+              <h4 class="ion-txt-center primary-color mb-5 font-size-15" ><b>Operation Hours</b></h4>
+              <p class="primary-color mt-0 mb-5 txt-small font-weight-bold">Total: <span>1</span></p>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="box-shadow border-radius width-90 height-90">
+          <ion-row>
+            <ion-col size="5">
+              <div class="ion-txt-center menu-card-div">
+                <img class="width-75" src="../../../../assets/icon/dashboard/routes.svg" />
+              </div>
+            </ion-col>
+            <ion-col size="7" class="pt-25">
+              <h4 class="ion-txt-center primary-color mb-5 font-size-15"><b>Members</b></h4>
+              <p class="primary-color mt-0 mb-5 txt-small font-weight-bold">Total: <span>1</span></p>
+
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
-        

@@ -1,8 +1,8 @@
 <ion-content force-overscroll="false" translucent="true" fullscreen="true">
   <ion-grid class=" logo-div ion-no-margin">
-    <ion-row class="lg-image-row ion-align-items-baseline">
+    <ion-row class="lg-image-row ion-align-items-baseline first-row">
       <ion-col class="lg-image ion-no-padding ion-no-margin">
-        <div class="image-overlay-div">
+        <div class="image-overlay-div first-div">
           <div>
             <ion-img class='logo-image' src="../../../../assets/logos/auth-logo.png"></ion-img>
           </div>
@@ -13,21 +13,21 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12" class="pl-15 ion-text-center">
-        <h1 class="ion-text-center">Sign Up</h1>
+        <h1 class="ion-text-center login-h1">Sign Up</h1>
       </ion-col>
     </ion-row>
-    <ion-row class="mt-10 pl-10">
+    <ion-row class="pl-10">
       <ion-col size="12"> 
         <ion-label for="email">User Name</ion-label>
         <ion-input 
         class="auth-input"
         name="user-name"
         type="text"
-        placeholder="Dynamic Ninja.com"
+        placeholder="Dynamic Ninja"
         ></ion-input>
       </ion-col>
     </ion-row>
-    <ion-row class="mt-20 pl-10">
+    <ion-row class="pl-10">
       <ion-col size="12"> 
         <ion-label for="email">Enter Email</ion-label>
         <ion-input 
@@ -38,7 +38,7 @@
         ></ion-input>
       </ion-col>
     </ion-row>
-    <ion-row class="mt-10 pl-10">
+    <ion-row class=" pl-10">
       <ion-col size="12"> 
         <ion-label for="email">Enter Password</ion-label>
         <ion-input 
@@ -52,7 +52,7 @@
   
     <ion-row>
       <ion-col size="12" class="pl-15">
-        <ion-label class="float-left font-size-15 letter-spacing-1">By continue you agree to our <span class="success">Terms of Service</span><br> and <span class="success">Privacy Policy</span></ion-label>
+        <ion-label class="float-left font-size-15 letter-spacing-1 ">By continue you agree to our <span class="span-term">Terms of Service</span><br> and <span class="span-term">Privacy Policy</span></ion-label>
       </ion-col>
     </ion-row>
     <ion-row class="p-10">
@@ -64,7 +64,7 @@
         shape="round"
         expand="true"
         >Sign Up</ion-button>
-        <p (click)="signin()" class="txt-align-center">Do You Have Account ? <a class="primary">SignIn</a></p>
+        <p (click)="signin()" class="txt-align-center ">Do You Have Account ? <a class="primary">SignIn</a></p>
       </ion-col>
     </ion-row>
   </ion-grid>  

@@ -11,13 +11,13 @@
               </ion-avatar>
             </div>
           </ion-col>
-          <ion-col size="8" class="pt-20 txt-align-left">
+          <ion-col size="8" class="pt-20 txt-align-left pl-30 top-15">
             <ion-label color='light'>
-              <h3 class="color-black">
+              <h3 class="color-white mb-0">
                 <b> Mr.John </b>
                 <ion-icon 
                 class="font-size-20 pl-10 edit-icon" 
-                color="primary"
+                color="light"
                  name="create"></ion-icon>
               </h3>
               <p class='color-white'>Imshuvo97@gmail.com</p>
@@ -28,105 +28,70 @@
     </ion-header>
     <ion-content
       class="side-menu-content ion-no-padding ion-margin">
-    <ion-grid class="pt-30">
-      
+    <ion-grid>      
       <ion-menu-toggle>
         <ion-row class="dark-border-top menu-row" (click)="navigateTo('profile')">
-          <ion-col size="10" class="pl-15">
+          <ion-col size="12" class="pl-15">
             <ion-icon
               class="side-menu-icon"
-              src="../assets/icon/system-icons/side-menu/my-detail.svg"
+              src="../assets/icon/system-icons/side-menu/appointment.svg"
               color="light"
             ></ion-icon>
             <ion-label class="menu-label color-black"> Appointment Hour Fee </ion-label>
           </ion-col>
-          <ion-col size="2" class="ion-text-center">
-            <ion-icon
-              class="forward-icon"
-              name="chevron-forward-outline"
-              color="dark"
-            ></ion-icon>
-          </ion-col>
         </ion-row>
       </ion-menu-toggle>
       <ion-menu-toggle>
-        <ion-row class="dark-border-top menu-row" (click)="navigateTo('addresses')">
-          <ion-col size="10" class="pl-15">
+        <ion-row class="menu-row" (click)="navigateTo('addresses')">
+          <ion-col size="12" class="pl-15">
             <ion-icon
               class="side-menu-icon"
-              src="../assets/icon/system-icons/side-menu/map.svg"
+              src="../assets/icon/system-icons/side-menu/calendar.svg"
               color="light"
             ></ion-icon>
             <ion-label class="menu-label color-black"> Appointment History </ion-label>
           </ion-col>
-          <ion-col size="2" class="ion-text-center pl-11">
-            <ion-icon
-              class="forward-icon"
-              name="chevron-forward-outline"
-              color="dark"
-            ></ion-icon>
-          </ion-col>
+          
         </ion-row>
       </ion-menu-toggle>
       <ion-menu-toggle>
-        <ion-row class="dark-border-top menu-row" (click)="navigateTo('addresses')">
-          <ion-col size="10" class="pl-15">
+        <ion-row class="menu-row" (click)="navigateTo('addresses')">
+          <ion-col size="12" class="pl-15">
             <ion-icon
               class="side-menu-icon"
-              src="../assets/icon/system-icons/side-menu/map.svg"
+              src="../assets/icon/system-icons/side-menu/surgery-room.svg"
               color="light"
             ></ion-icon>
             <ion-label class="menu-label color-black"> Operation Hours </ion-label>
           </ion-col>
-          <ion-col size="2" class="ion-text-center pl-11">
-            <ion-icon
-              class="forward-icon"
-              name="chevron-forward-outline"
-              color="dark"
-            ></ion-icon>
-          </ion-col>
         </ion-row>
       </ion-menu-toggle>
       <ion-menu-toggle>
-        <ion-row class="dark-border-top menu-row" (click)="navigateTo('order')">
-          <ion-col size="10" class="pl-15">
+        <ion-row class="menu-row" (click)="navigateTo('order')">
+          <ion-col size="12" class="pl-15">
             <ion-icon
               class="side-menu-icon"
-              src="../assets/icon/system-icons/side-menu/shopping-bag.svg"
+              src="../assets/icon/system-icons/side-menu/network.svg"
             ></ion-icon>
             <ion-label class="menu-label color-black"> Social Links</ion-label>
           </ion-col>
-          <ion-col size="2" class="ion-text-center pt-11">
-            <ion-icon
-              class="forward-icon"
-              name="chevron-forward-outline"
-              color="dark"
-            ></ion-icon>
-          </ion-col>
         </ion-row>
       </ion-menu-toggle>
       <ion-menu-toggle>
-        <ion-row class="dark-border-top menu-row" (click)="navigateTo('customers')">
-          <ion-col size="10" class="pl-15">
+        <ion-row class="menu-row" (click)="navigateTo('customers')">
+          <ion-col size="12" class="pl-15">
             <ion-icon
               class="side-menu-icon"
-              src="../assets/icon/system-icons/side-menu/credit-card.svg"
+              src="../assets/icon/system-icons/side-menu/chart.svg"
               color="light"
             ></ion-icon>
             <ion-label class="menu-label color-black"> Upgrade Members</ion-label>
           </ion-col>
-          <ion-col size="2" class="ion-text-center">
-            <ion-icon
-              class="forward-icon"
-              name="chevron-forward-outline"
-              color="dark"
-            ></ion-icon>
-          </ion-col>
         </ion-row>
       </ion-menu-toggle>
       <ion-menu-toggle>
-        <ion-row class="dark-border-top menu-row" (click)="navigateTo('notification')">
-          <ion-col size="10" class="pl-15">
+        <ion-row class="menu-row" (click)="navigateTo('notification')">
+          <ion-col size="12" class="pl-15">
             <ion-icon
               class="side-menu-icon"
               src="../assets/icon/system-icons/side-menu/bell.svg"
@@ -134,18 +99,11 @@
             ></ion-icon>
             <ion-label class="menu-label color-black"> Notifications</ion-label>
           </ion-col>
-          <ion-col size="2" class="ion-text-center pl-11">
-            <ion-icon
-              class="forward-icon"
-              name="chevron-forward-outline"
-              color="dark"
-            ></ion-icon>
-          </ion-col>
         </ion-row>
       </ion-menu-toggle>
       <ion-menu-toggle>
-        <ion-row class="dark-border-top menu-row" (click)="navigateTo('about')">
-          <ion-col size="10" class="pl-15">
+        <ion-row class="menu-row" (click)="navigateTo('about')">
+          <ion-col size="12" class="pl-15">
             <ion-icon
               class="side-menu-icon"
               src="../assets/icon/system-icons/side-menu/info.svg"
@@ -153,50 +111,29 @@
             ></ion-icon>
             <ion-label class="menu-label color-black"> About</ion-label>
           </ion-col>
-          <ion-col size="2" class="ion-text-center pl-11">
-            <ion-icon
-              class="forward-icon"
-              name="chevron-forward-outline"
-              color="dark"
-            ></ion-icon>
-          </ion-col>
         </ion-row>
       </ion-menu-toggle>
       <ion-menu-toggle>
-        <ion-row class="dark-border-top menu-row" (click)="navigateTo('about')">
-          <ion-col size="10" class="pl-15">
+        <ion-row class="menu-row" (click)="navigateTo('about')">
+          <ion-col size="12" class="pl-15">
             <ion-icon
               class="side-menu-icon"
-              src="../assets/icon/system-icons/side-menu/info.svg"
+              src="../assets/icon/system-icons/side-menu/question.svg"
               color="light"
             ></ion-icon>
             <ion-label class="menu-label color-black"> FAQ</ion-label>
           </ion-col>
-          <ion-col size="2" class="ion-text-center pl-11">
-            <ion-icon
-              class="forward-icon"
-              name="chevron-forward-outline"
-              color="dark"
-            ></ion-icon>
-          </ion-col>
         </ion-row>
       </ion-menu-toggle>
       <ion-menu-toggle>
-        <ion-row class="dark-border-top menu-row" (click)="navigateTo('blog')">
-          <ion-col size="10" class="pl-15">
+        <ion-row class="menu-row" (click)="navigateTo('blog')">
+          <ion-col size="12" class="pl-15">
             <ion-icon
               class="side-menu-icon"
-              src="../assets/icon/system-icons/side-menu/info.svg"
+              src="../assets/icon/system-icons/side-menu/copywriting.svg"
               color="light"
             ></ion-icon>
             <ion-label class="menu-label color-black"> Blogs</ion-label>
-          </ion-col>
-          <ion-col size="2" class="ion-text-center pl-11">
-            <ion-icon
-              class="forward-icon"
-              name="chevron-forward-outline"
-              color="dark"
-            ></ion-icon>
           </ion-col>
         </ion-row>
       </ion-menu-toggle>

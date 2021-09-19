@@ -1,33 +1,30 @@
-<ion-content>
-  <ion-tabs>
-    <ion-tab-bar class="admin-toolbar btrr-20 btlr-20" slot="bottom">
-      <ion-tab-button tab='home' selected>
-        <ion-icon class="font-size-20" name="home"></ion-icon>
-        <ion-label class="txt-align-center">
-          Home
-        </ion-label>
-      </ion-tab-button>
-      <ion-tab-button tab='explore'>
-        <ion-icon class="font-size-20" src="../../../assets/icon/system-icons/side-menu/dna.svg"></ion-icon>
-        <ion-label class="txt-align-center"> 
-          Schedule
-        </ion-label>
-      </ion-tab-button>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    
+    <ion-tab-button tab="home" (click)="clickOnTab(1)">
+      <ion-icon name="home"></ion-icon>
+      <div class="arrow-up"></div>
+    </ion-tab-button>
 
-      <ion-tab-button tab='cart'>
-        <ion-icon class="font-size-20" src="../../../assets/icon/system-icons/side-menu/shopping-cart.svg"></ion-icon>
-        <ion-label class="txt-align-center">
-          Appointments
-      </ion-label>
-      </ion-tab-button>
-      <ion-tab-button tab='profile'>
-        <ion-icon class="font-size-20" 
-        src="../../../assets/icon/system-icons/side-menu/user.svg"></ion-icon>
+    <ion-tab-button tab="search" (click)="clickOnTab(7)">
+      <ion-icon name="business"></ion-icon>
+      <div class="arrow-up"></div>
+    </ion-tab-button>
 
-        <ion-label class="txt-align-center"> 
-          Account 
-      </ion-label>       
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
-</ion-content>
+    <ion-tab-button tab="notification" (click)="clickOnTab(0)">
+      <ion-icon name="git-compare"></ion-icon>
+      <div class="arrow-up"></div>
+    </ion-tab-button>
+
+    <ion-tab-button tab="about" (click)="clickOnTab(0)">
+      <ion-icon name="people"></ion-icon>
+      <div class="arrow-up"></div>
+    </ion-tab-button>
+
+    <ion-tab-button tab="profile" (click)="clickOnTab(5)">
+      <ion-icon name="notifications"></ion-icon>
+      <div class="arrow-up"></div>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>

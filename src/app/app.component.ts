@@ -7,6 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  public selectedIndex = 0;
+  
   constructor(
     private router: Router,
   ) {}

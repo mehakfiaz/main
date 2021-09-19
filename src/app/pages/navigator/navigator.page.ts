@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { AppComponent } from 'src/app/app.component';
 import { ProfileComponent } from 'src/app/shared-modules/profile/profile.component';
 
 @Component({
@@ -11,6 +12,7 @@ export class NavigatorPage implements OnInit {
 
   constructor(
     private modalController: ModalController,
+    private app : AppComponent,
   ) { }
 
   ngOnInit() {
@@ -25,4 +27,9 @@ export class NavigatorPage implements OnInit {
     }).then(result_data => {
     });
   }
+  clickOnTab(id){
+    this.app.selectedIndex = id;
+    console.log(id);
+  }
+
 }
